@@ -9,7 +9,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 //redux store imports
-import { StoreProvider } from 'react-redux';
+import { Provider } from 'react-redux';
 import store from './utils/store';
 
 import Home from './pages/Home';
@@ -49,7 +49,7 @@ function App() {
 		<ApolloProvider client={client}>
 			<Router>
 				<div>
-					<StoreProvider store={store}>
+					<Provider store={store}>
 						<Nav />
 						<Routes>
 							<Route path="/" element={<Home />} />
@@ -63,7 +63,7 @@ function App() {
 							<Route path="/services/:id" element={<ServiceDetail />} />
 							<Route path="*" element={<NoMatch />} />
 						</Routes>
-					</StoreProvider>
+					</Provider>
 				</div>
 			</Router>
 		</ApolloProvider>
