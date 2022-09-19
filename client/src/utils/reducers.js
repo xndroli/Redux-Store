@@ -116,3 +116,5 @@ export const reducer = (state = initialState, action) => {
 export function useStoreReducer(initialState) {
 	return useReducer(reducer, initialState);
 }
+
+export default reducer;
