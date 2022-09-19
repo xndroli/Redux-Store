@@ -24,5 +24,8 @@
 	"bugs": {
 		"url": "https://github.com/xndroli/Redux-Store/issues"
 	},
-	"homepage": "https://github.com/xndroli/Redux-Store#readme"
+	"homepage": "https://github.com/xndroli/Redux-Store#readme",
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.8.5"
+	}
 }
